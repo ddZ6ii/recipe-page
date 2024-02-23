@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ______________________________________________________________________ *\
+   Import local fonts
+\* ______________________________________________________________________ */
+@font-face {
+  font-family: 'Outfit';
+  src: url('assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
