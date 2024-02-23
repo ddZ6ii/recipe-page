@@ -1,0 +1,25 @@
+# node_modules are ignored by default
+
+# Ignore all files starting with . or ~ except explicitly allowed allowed files
+.*
+~*
+!.postcssrc
+!.eslintrc.*
+!.prettierrc
+!.prettierc.*
+
+# Ignore build directories
+public/
+dist/
+
+# Ignore .md files
+*.md
+
+# Ignore log files
+*.log
+
+# Ignore vercel folder
+.vercel/
+
+# Ignore parcel folders
+.parcel-cache/

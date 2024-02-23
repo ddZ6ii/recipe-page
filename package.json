@@ -1,0 +1,22 @@
+{
+  "name": "recipe-page",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge",
+  "source": "src/index.html",
+  "author": "Denis Dezest <denis.dezest@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel --open chrome",
+    "build": "parcel build --dist-dir public"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.35",
+    "postcss-modules": "^6.0.0",
+    "postcss-uncss": "^0.17.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "uncss": "^0.17.3"
+  }
+}
