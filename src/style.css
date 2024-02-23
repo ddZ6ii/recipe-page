@@ -18,3 +18,82 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* ______________________________________________________________________ *\
+   Default base styles
+\* ______________________________________________________________________ */
+@layer base {
+  body {
+    font: 1rem theme('fontFamily.sans');
+    @apply text-neutral-wenge-brown;
+  }
+
+  h1,
+  h2 {
+    @apply font-serif;
+  }
+
+  h2 {
+    @apply mb-4 text-2xl text-primary-nutmeg;
+  }
+
+  ul,
+  ol {
+    @apply space-y-3 ml-6 flex-col;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li {
+    @apply pl-4;
+  }
+}
+
+/* ______________________________________________________________________ *\
+   Components styles
+\* ______________________________________________________________________ */
+@layer components {
+  .list {
+    & span {
+      @apply font-black;
+    }
+    & li::marker {
+      @apply font-black;
+    }
+  }
+
+  .list__primary-dark {
+    & li::marker {
+      @apply text-primary-dark-raspberry;
+    }
+  }
+
+  .list__primary {
+    & li::marker {
+      @apply text-primary-nutmeg;
+    }
+  }
+
+  .table {
+    @apply w-full;
+    & tr:not(:last-of-type) {
+      @apply border-b border-neutral-200;
+    }
+    & th,
+    td {
+      @apply p-4 text-left;
+    }
+    & th {
+      @apply font-medium;
+    }
+    & td {
+      @apply font-black text-primary-nutmeg;
+    }
+  }
+}
