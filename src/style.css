@@ -39,7 +39,7 @@
 
   ul,
   ol {
-    @apply space-y-3 ml-6 flex-col;
+    @apply ml-6 flex-col space-y-3;
   }
 
   ul {
@@ -87,7 +87,7 @@
     }
     & th,
     td {
-      @apply p-4 text-left;
+      @apply px-8 py-4 text-left;
     }
     & th {
       @apply font-medium;
