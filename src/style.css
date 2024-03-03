@@ -37,6 +37,11 @@
     @apply mb-4 text-2xl text-primary-nutmeg;
   }
 
+  img {
+    /* Since height (and width) attribute is set within html to force the browser to pre-allocate screen real-estate (speeds us page loading and prevents shifting the content), and since we want our images to have max-width: 100% to be resized along with their parent container, we also need to set heigh: auto to preserve the initial aspect ratio */
+    @apply block h-auto max-w-full;
+  }
+
   ul,
   ol {
     @apply ml-6 flex-col space-y-3;
@@ -94,6 +99,27 @@
     }
     & td {
       @apply font-black text-primary-nutmeg;
+    }
+  }
+
+  .footer__link {
+    display: inline-block;
+    text-decoration: underline;
+    &,
+    &:link {
+      @apply text-primary-dark-raspberry underline-offset-4;
+    }
+    &:visited {
+      @apply text-primary-nutmeg;
+    }
+    &:focus-visible {
+      @apply font-bold no-underline outline-offset-2;
+    }
+    &:hover {
+      @apply font-bold;
+    }
+    &:active {
+      @apply text-red-700;
     }
   }
 }
